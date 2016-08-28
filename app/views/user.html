@@ -1,0 +1,14 @@
+<div class="form">
+            <div>
+                <img src="/images/logo.png" width="75auto" height="" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <form ng-submit="createUser()" id="create-account-form" class="list">
+                <input class="name" type="text" placeholder="Nome" required="on" ng-model="data.name">
+                <input class="email" type="email" placeholder="Email" required="on" ng-model="data.email">
+                <input type="password" placeholder="Senha" required="on" ng-model="data.password"> 
+                <input type="password" placeholder="Confirmação de senha" required="on" ng-model="data.password_confirmation">
+                <input class="register" type="text" placeholder="Matrícula" required="on" ng-model="data.register">
+                <button type="submit" id="confirmation-button" style="border-radius:0px 0px 0px 0px;" class="button button-positive  button-block">Confirmar</button>
+            </form>
+</div>
+<link href="/styles/account.css" rel="stylesheet">
